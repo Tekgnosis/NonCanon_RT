@@ -1,0 +1,133 @@
+{
+
+	"Custom": {
+		"Category" : { 
+			"CategoryID" : "Cockpit" 
+		},
+		"WorkOrderCosts": {
+			"Install": {
+				"TechCost": "[[Chassis.Tonnage]]/10",
+				"CBillCost": "[[Chassis.Tonnage]] * 1.15"
+			}
+		},
+        "BonusDescriptions": {
+            "Bonuses": [
+                "DamageTaken: -10%",
+                "GyroStab: 30"
+            ]
+        },
+            "InventorySorter" : {
+                "SortKey" : "00020"
+            }		
+	},
+
+    "StatName" : null,
+    "RelativeModifier" : 0,
+    "AbsoluteModifier" : 0,
+    "Description" : {
+        "Cost" : 830000,
+        "Rarity" : 5,
+        "Purchasable" : true,
+        "Manufacturer" : "Noble Solutions",
+        "Model" : "",
+        "UIName" : "DNI Gyro assist cockpit",
+        "Id" : "Gear_Cockpit_DNI_Gyro",
+        "Name" : "DNI StabiliTrak cockpit suite ",
+        "Details" : "A Direct Neural Interface combined with advanced gyro feedback integration make it easier for the pilot to both avoid damage and stay upright while taking hits.  These sought after suites allow even a novice to pilot with an UL Gyro successfully, or more experiened mechwarriors to shrug off even the most devastating impacts and stay in the fight.",
+        "Icon" : "uixSvgIcon_equipment_Cockpit"
+    },
+    "BonusValueA" : "",
+    "BonusValueB" : "",
+    "ComponentType" : "Upgrade",
+    "ComponentSubType" : "NotSet",
+    "PrefabIdentifier" : "",
+    "BattleValue" : 0,
+    "InventorySize" : 2,
+    "Tonnage" : 3,
+    "AllowedLocations" : "Head",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false
+    "statusEffects" : [
+        {
+            "durationData" : {
+                "duration" : -1,
+                "ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : -1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-DNIReduction",
+                "Name" : "Spiked Armour Plates",
+                "Details" : "All incoming damage reduced by 10%.",
+                "Icon" : "uixSvgIcon_equipment_ActuatorArm"
+            },
+            "nature" : "Buff",
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "DamageReductionMultiplierAll",
+                "operation" : "Float_Add",
+                "modValue" : "-0.10",
+                "modType" : "System.Single"
+            },
+            "tagData" : null,
+            "floatieData" : null,
+            "actorBurningData" : null,
+            "vfxData" : null,
+            "instantModData" : null,
+            "poorlyMaintainedEffectData" : null
+        },
+        {
+			"durationData" :
+			{
+				"duration" : -1,
+                "stackLimit" : 1				
+			},
+			"targetingData" : 
+			{
+				"effectTriggerType" : "Passive",
+				"effectTargetType" : "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+			},
+			"effectType" : "StatisticEffect",
+			"Description" :
+			{
+				"Id" : "ULPenalty2",
+				"Name" : "Steadier 'Mech",
+				"Details" : "UNSTEADY threshold increased by 30",
+				"Icon" : "uixSvgIcon_action_evasivemove"
+			},
+			"statisticData" : 
+			{
+                "statName" : "UnsteadyThreshold",
+                "operation" : "Float_Add",
+                "modValue" : "30.0",
+                "modType" : "System.Single"
+			},
+			"nature" : "Buff"
+		}		
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

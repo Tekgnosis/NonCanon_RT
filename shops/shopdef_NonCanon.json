@@ -1,0 +1,74 @@
+{
+   "ID" : "shopdef_NonCanon",
+   "RequirementTags": {
+    "items": [
+        "rt_economy",      
+        "rep_mercenaryreviewboard_5"
+    ],
+    "tagSetSourceFile": ""
+},
+    "ExclusionTags": {
+        "items": [
+            "planet_other_empty"
+        ],
+        "tagSetSourceFile": ""
+    },
+   "Inventory" : [
+		{
+			"Id" : "Gear_Blast_Diverter",
+			"Type" : "Upgrade",
+			"DiscountModifier" : 1.0,
+			"Count" : 0,
+        },
+        {
+			"Id" : "Gear_Cockpit_DNI_Gyro",
+			"Type" : "Upgrade",
+			"DiscountModifier" : 1.0,
+			"Count" : 0,
+        },
+        {
+			"Id" : "Gear_Cockpit_DNI_TC",
+			"Type" : "Upgrade",
+			"DiscountModifier" : 1.0,
+			"Count" : 0,
+        },
+        {
+			"Id" : "Gear_Cockpit_DNI_Insulated",
+			"Type" : "Upgrade",
+			"DiscountModifier" : 1.0,
+			"Count" : 0,
+        },
+        {
+			"Id" : "Weapon_Javalin_15",
+			"Type" : "Weapon",
+			"DiscountModifier" : 1.0,
+			"Count" : 0,
+        },
+        {
+			"Id" : "Weapon_Javalin_12",
+			"Type" : "Weapon",
+			"DiscountModifier" : 1.0,
+			"Count" : 0,
+        },
+        {
+			"Id" : "Weapon_Javalin_9",
+			"Type" : "Weapon",
+			"DiscountModifier" : 1.0,
+			"Count" : 0,
+        },
+        {
+			"Id" : "Weapon_Javalin_6",
+			"Type" : "Weapon",
+			"DiscountModifier" : 1.0,
+			"Count" : 0,
+        },
+		        {
+			"Id" : "Laser_Needle",
+			"Type" : "Weapon",
+			"DiscountModifier" : 1.0,
+			"Count" : 0,
+        }
+   ],
+   "Specials" : [
+	]
+}

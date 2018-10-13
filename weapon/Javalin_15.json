@@ -1,0 +1,78 @@
+{
+
+	"Custom": {
+        "BonusDescriptions": {
+            "Bonuses": [
+                "PipsIgnored: 2",
+                "Crits: +200%",
+                "WpnRecoil: 4"
+            ]
+        },	
+            "InventorySorter" : {
+                "SortKey" : "03011"
+            }
+		},
+		
+    "Category" : "Missile",
+    "Type" : "LRM",
+    "WeaponSubType" : "SRM6",
+    "MinRange" : 250,
+    "MaxRange" : 2000,
+    "RangeSplit" : [
+        400,
+        600,
+        900
+    ],
+    "AmmoCategory" : "Flamer",
+    "StartingAmmoCapacity" : 15,
+    "HeatGenerated" : 40,
+    "Damage" : 60,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 2,
+    "DamageVariance" : 0,
+    "HeatDamage" : 0,
+    "AccuracyModifier" : 0,
+    "CriticalChanceMultiplier" : 3,
+    "AOECapable" : false,
+    "IndirectFireCapable" : true,
+    "RefireModifier" : 5,
+    "ShotsWhenFired" : 1,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 4,
+    "Instability" : 75,
+    "WeaponEffectID" : "WeaponEffect-Weapon_SRM6",
+    "Description" : {
+        "Cost" : 1200000,
+        "Rarity" : 5,
+        "Purchasable" : true,
+        "Manufacturer" : "Noble Solutions",
+        "Model" : "JAV-15",
+        "UIName" : "Javalin missile 15 rack",
+        "Id" : "Weapon_Javalin_15",
+        "Name" : "Javalin missile 15 rack",
+        "Details" : "Javalin missiles, with both a long minimum arming and maximum range, impart a high kinetic impact on target but generate excessive heat and launch recoil.  Artemis IV is manditory for operation.  Due to missile size precluding ammunition feeds, each launcher consists of single fire tubes stacked varying counts.  Unfortunately, raw damage potential is de-prioritized and most companies are content to deploy standard LRM; particularly in light of the stratospheric ammunition costs the Javalin system incurs.",
+        "Icon" : "uixSvgIcon_weapon_Missile"
+    },
+    "BonusValueA" : "",
+    "BonusValueB" : "",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "srm6",
+    "BattleValue" : 0,
+    "InventorySize" : 3,
+    "Tonnage" : 6,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_extreme"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

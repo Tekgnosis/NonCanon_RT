@@ -1,0 +1,130 @@
+{
+
+	"Custom" :  {"Category" : { "CategoryID" : "BlastDiverter"}, "Flags" : { "flags" : [ "not_broken" ] },
+        "BonusDescriptions": {
+            "Bonuses": [
+                "DamageTaken: -4%",
+                "JumpDistance: -5%"
+            ]
+        },
+            "InventorySorter" : {
+                "SortKey" : "00026"
+            }		
+	},
+
+    "StatName" : null,
+    "RelativeModifier" : 0,
+    "AbsoluteModifier" : 0,
+    "Description" : {
+        "Cost" : 400000,
+        "Rarity" : 5,
+        "Purchasable" : true,
+        "Manufacturer" : "Noble Solutions",
+        "Model" : "",
+        "UIName" : "Blast Diverter",
+        "Id" : "Gear_Blast_Diverter",
+        "Name" : "Blast Diverter",
+        "Details" : "Functionally similar to, and incompatible with, Solaris style Combat Shields. These hardened 'wings' divert glancing strikes or blast damage away from the primary ablative armor, reducing overall damage taken by a small ammount.  Stackable to 5.  For the discerning warrior with an OCD Symmetry Complex, as they cost 20% more than comparable single shield solutions.",
+        "Icon" : "uixSvgIcon_ability_angelofdeath"
+    },
+    "BonusValueA" : "-4% Damage Taken.",
+    "BonusValueB" : "-5% Jump Distance.",
+    "ComponentType" : "Upgrade",
+    "ComponentSubType" : "NotSet",
+    "PrefabIdentifier" : "",
+    "BattleValue" : 0,
+    "InventorySize" : 1,
+    "Tonnage" : 0.5,
+    "AllowedLocations" : "Arms,Torso,Head",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        {
+            "durationData" : {
+                "duration" : -1,
+                "ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 5,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-CombatShield",
+                "Name" : "REDUCED DAMAGE TAKEN",
+                "Details" : "All incoming damage reduced by 4% and 5% reduced jump distance.",
+                "Icon" : "uixSvgIcon_ability_angelofdeath"
+            },
+            "nature" : "Buff",
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "DamageReductionMultiplierAll",
+                "operation" : "Float_Add",
+                "modValue" : "-0.04",
+                "modType" : "System.Single"
+            },
+            "tagData" : null,
+            "floatieData" : null,
+            "actorBurningData" : null,
+            "vfxData" : null,
+            "instantModData" : null,
+            "poorlyMaintainedEffectData" : null
+        },
+			{
+			"durationData" :
+			{
+				"duration" : -1,
+                "stackLimit" : 5				
+			},
+			"targetingData" : 
+			{
+				"effectTriggerType" : "Passive",
+				"effectTargetType" : "Creator"
+			},
+			"effectType" : "StatisticEffect",
+			"Description" :
+			{
+				"Id" : "ShieldJumpPenalty",
+				"Name" : "Jump Distance",
+				"Details" : "Jump distance decreased by 5%",
+				"Icon" : "uixSvgIcon_ability_angelofdeath"
+			},
+			"statisticData" : 
+			{
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "JumpDistanceMultiplier",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.95",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+			},
+			"nature" : "Buff"
+		}		
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "Name": "NonCanon",
+    "Enabled": true,
+
+    "Version": "0.1.0",
+    "Description": "Non Canon equipment extrapolations for quality of life.  Specific to RogueTech for balancing purposes.",
+    "Author": "Tekgnosis",
+    "Website": "",
+    "Contact": "fakeemail@fakeemail.com",
+	
+				"DependsOn": [ "CustomComponents", "MechEngineer"],
+
+    "Manifest": [
+    { "Type": "UpgradeDef", "Path": "upgrade" },
+    { "Type": "WeaponDef", "Path": "weapon" },
+	{ "Type": "ShopDef", "Path": "shops" },
+	{ "Type": "ChassisDef", "Path": "chassis" }, 
+	{ "Type": "MechDef", "Path": "mech" }, 
+	{ "Type": "MoveDef", "Path": "move" }, 
+    ]	
+}
